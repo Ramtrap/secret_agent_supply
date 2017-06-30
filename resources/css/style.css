@@ -66,6 +66,12 @@ header .container {
   align-items: center;
 }
 
+.menu .small-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container li {
   margin: 0.75rem 0;
 }
@@ -139,8 +145,23 @@ footer {
   color: white;
 }
 
+@media only screen and (min-width: 1024px) {
+  .menu .small-screen {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
-  .menu {
+  html {
+    font-size: 16px;
+  }
+  .menu .large-screen {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+  .glasses {
     display: none;
   }
 }
