@@ -1,19 +1,23 @@
 html {
+  background-color: white;
+  color: white;
   font-size: 18px;
   font-family: Helvetica;
-  color: white;
-  background-color: grey; /*Will eventually change this to black*/
 }
 
 header {
   background-color: black;
 }
 
-.container {
+header .container {
   display: flex;
   align-items: center;
-  max-width: 960px;
+}
+
+.container {
+  width: 960px;
   margin: 0 auto;
+  border: 1px solid red;
 }
 
 .logo {
@@ -22,48 +26,50 @@ header {
   padding: 0.66rem 1rem 0.66rem 0.5rem;
 }
 
-.main {
-  width: 960px;
-  margin: auto;
+.container span {
+  color: white;
 }
 
 .banner {
   background-image: url('../images/moto.jpeg');
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 25rem;
-  width: 100%;
 }
 
-.banner-content {
+.top-news {
+  margin-top: 9rem;
   width: 25rem;
-  height: auto;
   background-color: black;
-  margin: 9rem 0;
 }
 
-.banner-content-container {
-  padding: 2rem 3rem;
-}
-
-.banner-content h4 {
+.top-news h4 {
   font-weight: bold;
-  font-size: 1rem;
-  padding: 0.25rem 0;
+  padding: 2rem 0 .125rem 3rem;
 }
 
-.banner-content h1 {
+.top-news h1 {
+  font-weight: bold;
   font-size: 2rem;
-  font-weight: bold;
-  padding: 0.25rem 0;
+  padding: .125rem 0 2rem 3rem;
 }
 
 .menu {
   background-color: firebrick;
 }
 
-.nav-menu {
+.menu .container {
+  display: flex;
   justify-content: space-between;
-  padding: 0.75rem 0;
+  align-items: center;
+}
+
+.container li {
+  margin: 0.75rem 0;
+}
+
+.container li a {
+  text-decoration: none;
+  color: white;
 }
