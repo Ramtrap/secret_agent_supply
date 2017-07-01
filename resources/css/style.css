@@ -5,12 +5,11 @@ html {
   font-family: Helvetica;
 }
 
-body {
-  margin: auto;
-}
-
 header {
   background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 header .container {
@@ -39,6 +38,9 @@ header .container {
   background-repeat: no-repeat;
   background-size: cover;
   height: 25rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .top-news {
@@ -62,6 +64,9 @@ header .container {
 
 .menu {
   background-color: firebrick;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .menu .container {
@@ -70,7 +75,7 @@ header .container {
   align-items: center;
 }
 
-.menu .small-screen {
+.menu .small {
   display: none;
   text-align: center;
   padding: 0.1rem;
@@ -150,45 +155,8 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
-  html {
-    font-size: 16px;
-  }
-
-  .logo {
-    height: 1.5rem;
-  }
-
-  .banner {
-    height: 20rem;
-  }
-
-  .top-news {
-    top: 6rem;
-  }
-
-  .menu .container {
-    display: none;
-  }
-
-  .menu {
-    justify-content: center;
-  }
-
-  .menu .small-screen {
-    display: block;
-  }
-
-  .product {
-    width: 47%;
-  }
-
-  .glasses {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .watch {
-    display: none;
+  .container {
+    width: 100%;
+    margin: 0 auto;
   }
 }

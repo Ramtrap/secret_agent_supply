@@ -1,0 +1,43 @@
+html {
+  background: white;
+  font-family: Helvetica;
+  font-size: 18px;
+  background-color: white;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  border: 5px solid blue;
+}
+
+.logo {
+  height: 1.5rem;
+  padding: 0.66rem 1rem 0.66rem 0.5rem;
+}
+
+/*MEDIA QUERY MAX-WIDTH 1024px*/
+@media only screen and (max-width: 1024px) {
+  .container {
+    background-color: lightgray;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/*MEDIA QUERY MAX-WIDTH 500px*/
+@media only screen and (max-width: 500px) {
+    .container {
+      background-color: gray;
+    }
+}
