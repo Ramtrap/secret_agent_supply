@@ -5,6 +5,10 @@ html {
   font-family: Helvetica;
 }
 
+body {
+  margin: auto;
+}
+
 header {
   background-color: black;
 }
@@ -179,6 +183,12 @@ footer {
   }
 
   .glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .watch {
     display: none;
   }
 }
