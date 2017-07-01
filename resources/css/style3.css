@@ -26,10 +26,48 @@ header .container {
   padding: 0.66rem 1rem 0.66rem 0.5rem;
 }
 
+.banner {
+  background-image: url('../images/moto.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25rem;
+}
+
+.banner .container {
+  display: flex;
+}
+
+.banner-text-box {
+  background-color: black;
+  color: white;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.banner-heading,
+.banner-text {
+  font-weight: bold;
+}
+
+  .banner-heading {
+    margin-bottom: .25rem;
+  }
+
+  .banner-text {
+    margin-top: .25rem;
+    font-size: 2rem;
+  }
 /*MEDIA QUERY MAX-WIDTH 1024px*/
 @media only screen and (max-width: 1024px) {
+  .mobile {
+    font-size: 16px;
+  }
+
   .container {
-    background-color: lightgray;
+    background-color: transparent;
     width: 100%;
     margin: 0 auto;
   }
@@ -37,7 +75,21 @@ header .container {
 
 /*MEDIA QUERY MAX-WIDTH 500px*/
 @media only screen and (max-width: 500px) {
-    .container {
-      background-color: gray;
-    }
+  .container {
+    background-color: transparent;
+  }
+  .banner {
+    height: 15rem;
+  }
+  .banner-text-box {
+    top: 10rem;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .banner-heading {
+    font-size: 0.77rem;
+  }
+  .banner-text {
+    font-size: 1rem;
+  }
 }
