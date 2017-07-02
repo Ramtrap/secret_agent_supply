@@ -138,6 +138,14 @@ li a {
   margin-top: 0.25rem;
 }
 
+footer {
+  background-color: black;
+  color: white;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
 /*MEDIA QUERY MAX-WIDTH 1024px*/
 @media only screen and (max-width: 1024px) {
   .mobile {
@@ -230,5 +238,9 @@ li a {
   .info-box {
     width: 90%;
     margin: 2rem auto;
+  }
+
+  footer {
+    text-align: center;
   }
 }
