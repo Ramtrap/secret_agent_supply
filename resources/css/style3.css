@@ -117,7 +117,26 @@ li a {
   padding: 0.5rem;
 }
 
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem 0 4rem 0;
+}
 
+.info-box {
+  width: 35%;
+}
+
+.info-box-main {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.info-box .info-box-value {
+  margin-top: 0.25rem;
+}
 
 /*MEDIA QUERY MAX-WIDTH 1024px*/
 @media only screen and (max-width: 1024px) {
@@ -202,5 +221,14 @@ li a {
 
   .watch {
     display: none;
+  }
+
+  .business-info {
+    display: block;
+  }
+
+  .info-box {
+    width: 90%;
+    margin: 2rem auto;
   }
 }
