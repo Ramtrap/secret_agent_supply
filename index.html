@@ -1,5 +1,5 @@
-<!--<!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html class="mobile">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,16 +11,16 @@
   <body>
     <header>
       <div class="container">
-        <img class="logo" src="./resources/images/logo.png" alt="Secret Service Supply logo"/>
-        <span>SECRET AGENT SUPPLY INC.</span>
+        <a href="./index.html"><img class="logo" src="./resources/images/logo.png" alt="Secret Service Supply logo"/></a>
+        <span class="logo-text">SECRET AGENT SUPPLY INC.</span>
       </div>
     </header>
 
     <div class="banner">
       <div class="container">
-        <div class="top-news">
-          <h4>NEW ARRIVAL</h4>
-          <h1>SPORT BIKES AND MOTORCYCLES</h1>
+        <div class="banner-text-box">
+          <h4 class="banner-heading">NEW ARRIVAL</h4>
+          <h1 class="banner-text">SPORT BIKES AND MOTORCYCLES</h1>
         </div>
       </div>
     </div>
@@ -33,42 +33,46 @@
         <li><a href="#">Vehicles</a></li>
         <li><a href="#">Classes</a></li>
         <li><a href="#">Contact</a></li>
-        <li class="container small"><a href="#">Menu</a></li>
+      </ul>
+      <ul class="mobile-nav">
+        <li><a href="#">Menu</a></li>
       </ul>
     </nav>
 
-    <div class="catalogue container">
+
+    <div class="container">
       <div class="products">
         <div class="product pen">
           <div class="product-image">
-            <img src="./resources/images/pen.png"/>
+            <img src="./resources/images/pen.png" alt="Exploding pen"/>
           </div>
-          <span class="product-text">Exploding Pen</span>
+          <span class="product-description">Exploding Pen</span>
         </div>
         <div class="product watch">
           <div class="product-image">
-            <img src="./resources/images/watch.png"/>
+            <img src="./resources/images/watch.png" alt="Cellular watch"/>
           </div>
-          <span class="product-text">Cellular Watch</span>
+          <span class="product-description">Cellular Watch</span>
         </div>
         <div class="product glasses">
           <div class="product-image">
-            <img src="./resources/images/glasses.png"/>
+            <img src="./resources/images/glasses.png" alt="Thermal glasses"/>
           </div>
-          <span class="product-text">Thermal Glasses</span>
+          <span class="product-description">Thermal Glasses</span>
         </div>
       </div>
     </div>
 
-    <div class="container loc-hrs">
+
+    <div class="container">
       <div class="business-info">
         <div class="info-box">
-          <span class="info-title">Location</span>
-          <span class="info-data">-47.346436, 84.32354</span>
+          <span class="info-box-main">Location</span>
+          <div class="info-box-value"><span>-47.346436, 84.32354</span></div>
         </div>
         <div class="info-box">
-          <span class="info-title">Hours</span>
-          <span class="info-data">0800 - 1800</span>
+          <span class="info-box-main">Hours</span>
+          <div class="info-box-value"><span>0800 - 1800</span></div>
         </div>
       </div>
     </div>
